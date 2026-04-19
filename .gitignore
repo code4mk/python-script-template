@@ -1,6 +1,38 @@
+# Virtual environments
 .venv/
+venv/
+env/
 
-# env files
+# Env files
 .env*
 !.env.example
 
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data (keep directory structure, ignore contents)
+data/input/*
+data/output/*
+!data/input/.gitkeep
+!data/output/.gitkeep
+
+# Logs
+*.log
+logs/
