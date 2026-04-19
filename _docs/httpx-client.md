@@ -2,13 +2,13 @@
 
 A unified HTTPX wrapper (`HttpxClient`) that supports both sync and async modes via a single `mode` parameter.
 
-**Location:** `common/httpx_client.py`
+**Location:** `lib/httpx_client.py`
 
 
 ## Constructor
 
 ```python
-from common.httpx_client import HttpxClient
+from lib.httpx_client import HttpxClient
 
 client = HttpxClient(
     base_url="https://api.example.com",

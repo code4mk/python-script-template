@@ -5,7 +5,7 @@ A batteries-included Python script boilerplate for quickly spinning up new proje
 ## Features
 
 - **Environment management** -- layered `.env` / `.env.local` loading via `python-dotenv` + `pydantic-settings`
-- **HTTP client** -- unified sync/async wrapper around `httpx` (`common/httpx_client.py`)
+- **HTTP client** -- unified sync/async wrapper around `httpx` (`lib/httpx_client.py`)
 - **Typed settings** -- validated config with sensible defaults (`config/settings.py`)
 - **Data directories** -- `data/input/` and `data/output/` ready for file I/O scripts
 
@@ -16,9 +16,11 @@ A batteries-included Python script boilerplate for quickly spinning up new proje
 ├── main.py                  # Entry point
 ├── config/
 │   └── settings.py          # Pydantic-based settings (reads from .env)
-├── common/
+├── lib/
 │   ├── dot_env_loader.py    # Layered .env loader
 │   └── httpx_client.py      # Sync/async HTTP client wrapper
+├── utils/                   # Utility functions
+│   └── http.py              # HTTP utility functions
 ├── scripts/                 # Standalone helper scripts
 ├── data/
 │   ├── input/               # Raw / source data

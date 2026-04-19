@@ -1,7 +1,7 @@
 from functools import lru_cache
 from pydantic_settings import BaseSettings, SettingsConfigDict
 from pydantic import Field
-from common.dot_env_loader import dot_env_loader
+from lib.dot_env_loader import dot_env_loader
 
 # Load the .env file before loading the settings
 dot_env_loader()
